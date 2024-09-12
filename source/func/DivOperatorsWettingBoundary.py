@@ -1,7 +1,9 @@
 import jax.numpy as jnp
-from source.SimulationSetup.SimulationParameters import r_0, r_1, h1, h2, kappa
-from source.JaxGradLaplacian.JaxLaplacian import laplacian_2d
-from source.JaxGradLaplacian.JaxGradient import grad_2d
+from jax import Array
+
+from source.SimulationSetup.SimulationParametersD2Q9 import r_0, r_1, h1, h2, kappa
+from source.JaxGradLaplacian.JaxLaplacian2D import laplacian_2d
+from source.JaxGradLaplacian.JaxGradient2D import grad_2d
 
 
 def correction_density(rho):

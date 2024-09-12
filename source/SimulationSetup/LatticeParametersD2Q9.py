@@ -10,8 +10,8 @@ import jax.numpy as jnp
 
 n_discrete_velocities = 9
 
-lattice_velocities = jnp.array([[0, 1, 0, -1, 0, 1, 1, -1, -1],  # Velocities x components
-                                [0, 0, 1, 0, -1, 1, -1, -1, 1]])  # Velocities y components
+lattice_velocities = jnp.array([[0, 1, 0, -1, 0, 1, -1, -1, 1],  # Velocities x components
+                                [0, 0, 1, 0, -1, 1, 1, -1, -1]])  # Velocities y components
 lattice_index = jnp.array([0, 1, 2, 3, 4, 5, 6, 7, 8])
 opposite_lattice_indices = jnp.array([0, 3, 4, 1, 2, 7, 8, 5, 6])
 velocities_right = jnp.array([1, 5, 8])

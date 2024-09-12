@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28147545-f26c-4086-92da-ba205c9cad8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MultiPhaseDynamics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxGradient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxLaplacian.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/SimulationSetup/LatticeParameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/SimulationSetup/SimulationParameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/func/DivOperatorsWettingBoundary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/func/LBMfunc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/func/MacroscopicVariables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
+    <list default="true" id="28147545-f26c-4086-92da-ba205c9cad8a" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/source/func/BoundaryConditions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxGradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxGradient2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxLaplacian.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/JaxGradLaplacian/JaxLaplacian2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/SimulationSetup/LatticeParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/SimulationSetup/LatticeParametersD2Q9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/SimulationSetup/SimulationParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/SimulationSetup/SimulationParametersD2Q9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/func/DivOperatorsWettingBoundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/func/DivOperatorsWettingBoundary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/func/LBMfunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/func/LBMfunc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/func/MacroscopicVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/func/MacroscopicVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +31,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;szkuds&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/szkuds/LBM-SZK.git&quot;,
+    &quot;accountId&quot;: &quot;23b598d0-425a-4058-b616-3fcc04ed68f0&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/lib/python3.12/site-packages/jax/_src/numpy/ufuncs.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -46,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.LaplacianOperatorWettingBoundary.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sbszkudlarek/PycharmProjects/MultiPhaseDynamics/source&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.LaplacianOperatorWettingBoundary.executor": "Run",
+    "Python.LatticeParametersD2Q9.executor": "Debug",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/sbszkudlarek/PycharmProjects/MultiPhaseDynamics/source",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source" />
@@ -118,14 +130,54 @@
       <updated>1725559549775</updated>
       <workItem from="1725559551186" duration="14479000" />
       <workItem from="1725575400814" duration="2200000" />
+      <workItem from="1725579486417" duration="23000" />
+      <workItem from="1725613132307" duration="4982000" />
+      <workItem from="1725661230014" duration="988000" />
+      <workItem from="1725869891658" duration="1499000" />
+      <workItem from="1725871927565" duration="5121000" />
+      <workItem from="1725881169499" duration="12197000" />
+      <workItem from="1726090282416" duration="594000" />
+      <workItem from="1726142878381" duration="54000" />
+      <workItem from="1726143761779" duration="2292000" />
+      <workItem from="1726151700735" duration="804000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/source/SimulationSetup/LatticeParametersD2Q9.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MultiPhaseDynamics$LaplacianOperatorWettingBoundary.coverage" NAME="LaplacianOperatorWettingBoundary Coverage Results" MODIFIED="1725565475622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/MultiPhaseDynamics$main.coverage" NAME="main Coverage Results" MODIFIED="1725577213070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/MultiPhaseDynamics$LatticeParametersD2Q9.coverage" NAME="LatticeParametersD2Q9 Coverage Results" MODIFIED="1725885993798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/SimulationSetup" />
+    <SUITE FILE_PATH="coverage/MultiPhaseDynamics$main.coverage" NAME="main Coverage Results" MODIFIED="1726152008527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
 </project>

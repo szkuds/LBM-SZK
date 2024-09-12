@@ -10,7 +10,7 @@ def h(theta):
 
 # Simulation scales
 # Set scale
-scale = 3
+scale = 1
 # Set plotting frequency
 plot_every = 300 * scale
 skip_it = 20000 * scale

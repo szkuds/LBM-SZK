@@ -1,4 +1,4 @@
-from source.SimulationSetup.SimulationParameters import *
+from source.SimulationSetup.SimulationParametersD2Q9 import *
 
 
 def init():

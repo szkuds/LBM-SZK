@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 
 from source.func.LBMfunc import *
 from source.func.MacroscopicVariables import *
+from source.func.BoundaryConditions import *
 from init import *
 
 # Ensures that every run is saved in a separate directory
@@ -27,14 +28,14 @@ def lbm():
     @jax.jit
     def update(f_i_prev):
         # macroscopic variables
-        rho_prev = density(f_i_prev)
+        rho_prev = get_density(f_i_prev)
         force_prev = force_term(rho_prev)
-        u_prev = velocity(f_i_prev, force_prev, lattice_velocities)
+        u_prev = get_velocity(f_i_prev, force_prev, lattice_velocities)
         # update procedure
         f_eq = equilibrium(rho_prev, u_prev)
         source = source_term(u_prev, force_prev)
-        f_col = collision(f_i_prev, f_eq, source)
-        f_bc = bounce_back_boundary_conditions(f_col)
+        f_col = collision_bgk(f_i_prev, f_eq, source)
+        f_bc = bounce_back(f_col)
         f_streamed = streaming(f_bc)
         return f_streamed
 
@@ -47,7 +48,7 @@ def lbm():
         f_prev = f_next
 
         if it % plot_every == 0 and it > skip_it:
-            rho_ = density(f_next)
+            rho_ = get_density(f_next)
             plt.imshow(rho_.T, cmap='viridis')
             plt.gca().invert_yaxis()
             plt.colorbar()
@@ -58,7 +59,7 @@ def lbm():
 
 def main():
     parser = argparse.ArgumentParser(description="Description of your command-line tool")
-    parser.add_argument("-a", "--arg1", help="Description of argument 1")
+    parser.add_argument("-bc", "--boundary_conditions", help="Boundary conditions", action="store_true")
     parser.add_argument("-b", "--arg2", help="Description of argument 2")
     parser.add_argument("-c", "--arg3", help="Description of argument 3")
 
