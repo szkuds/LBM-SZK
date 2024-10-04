@@ -58,15 +58,6 @@ def lbm():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Description of your command-line tool")
-    parser.add_argument("-bc", "--boundary_conditions", help="Boundary conditions", action="store_true")
-    parser.add_argument("-b", "--arg2", help="Description of argument 2")
-    parser.add_argument("-c", "--arg3", help="Description of argument 3")
-
-    # args = parser.parse_args()
-
-    # Set things up
-    # Start calling the code update
     lbm()
 
 
