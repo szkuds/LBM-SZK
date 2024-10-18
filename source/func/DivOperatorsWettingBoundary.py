@@ -9,7 +9,7 @@ from source.JaxGradLaplacian.JaxGradient2D import grad_2d
 def correction_density(rho):
     rho_ = rho[:, 0]
     rho_ = rho_.at[0:(r_0 + r_1)].set(rho[0:(r_0 + r_1), 0] + h1 / kappa)
-    rho_ = rho_.at[(r_0 + r_1):].set(rho[(r_0 + r_1):, 0] + h2 / kappa)
+    rho_ = rho_.at[(r_0 + r_1):-1].set(rho[(r_0 + r_1):-1, 0] + h2 / kappa)
     rho__ = jnp.column_stack((rho_, rho))
     return rho__
 

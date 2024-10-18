@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28147545-f26c-4086-92da-ba205c9cad8a" name="Changes" comment="Ignore local test folder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/SimulationSetup/SimulationParametersD2Q9.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/SimulationSetup/SimulationParametersD2Q9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/func/MacroscopicVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/func/MacroscopicVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/func/DivOperatorsWettingBoundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/func/DivOperatorsWettingBoundary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/init.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
     &quot;Python.LatticeParametersD2Q9.executor&quot;: &quot;Debug&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;working&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/sbszkudlarek/PycharmProjects/MultiPhaseDynamics/source&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -101,6 +99,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>

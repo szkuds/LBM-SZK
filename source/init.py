@@ -7,8 +7,8 @@ def init():
     [x, y] = jnp.meshgrid(x, y)
     u = jnp.zeros((2, nx, ny))
     rho = rho0 * jnp.ones((nx, ny))
-    r0 = r_0 / 1.5 / (jnp.sin(math.pi - theta_3) * 2)
-    center_y, center_x = 1 / jnp.tan(math.pi - theta_3) * r_0 / 1.5 * 0.5, r_0
+    r0 = r_0 / 1.5 / (jnp.sin(math.pi - theta_1) * 2)
+    center_y, center_x = 1 / jnp.tan(math.pi - theta_1) * r_0 / 1.5 * 0.5, r_0
     distance = jnp.sqrt((x - center_x) ** 2 + (y - center_y) ** 2)
     mask = distance <= r0
     rho = rho.at[mask.T].set(rho_c * (1 + jnp.sqrt(beta_tau)))
